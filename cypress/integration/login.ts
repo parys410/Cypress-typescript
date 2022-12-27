@@ -17,24 +17,20 @@ it('Test Sauce Demo Invalid Password', () => {
 
 it('Test Sauce Demo Sauce labs product backpack', () => {
   loginPage.login(URL,'standard_user','secret_sauce');
-  loginPage.assertLogin();
   dashboardPage.sauceLabsBackpack();
 });
 
 it('Test Click Add Sauce Labs Backpack to Cart', () => {
   loginPage.login(URL,'standard_user','secret_sauce');
-  loginPage.assertLogin();
   dashboardPage.assertAddToCart();
 });
 
 it('Test Add Sauce Labs Backpack to Cart And Go To Cart Page', () => {
   loginPage.login(URL,'standard_user','secret_sauce');
-  loginPage.assertLogin();
   dashboardPage.assertGoToCart();
 });
 
 it('Test Checkout A Product', () => {
   loginPage.login(URL,'standard_user','secret_sauce');
-  loginPage.assertLogin();
   dashboardPage.assertCheckoutProduct('Ary','Setiyawan','80351');
 });
